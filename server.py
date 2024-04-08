@@ -3,6 +3,7 @@ import CRUD_Ops
 
 app = FastAPI()
 
+@app.head('/')
 @app.get('/')
 def root():
     return ('Cosmo Cloud Assignment !')
